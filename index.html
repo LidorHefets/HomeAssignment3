@@ -6,10 +6,65 @@
     <title></title>
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <script src="js/data/amsterdam.js" defer></script>
+     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
     <script>
       console.log(amsterdam);
     </script>
   </head>
-  <body></body>
+  <body>
+
+    <header class="site-header">
+ <nav class="navbar">
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        ☰
+      </button>
+      <a id="userName">hi, "user Name"</a><br>
+      <a  href="login.html">Sign Out</a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="rent.html">My Booking</a></li>
+        <li><a href="mybookings.html">Rent</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+   <main class="main-section">
+    <section class="intro-grid">
+      <div class="intro-text">
+        <h1>Home</h1>
+        <p>
+          Aspiring Business Consultant, Data Analyst, and Systems Analyst with a passion for solving complex problems and helping business grow.</p>
+        <p>Feel free to reach out to me on any of the platforms below:</p>
+       
+      </div>
+
+
+         <div class="login-box">
+      <h3>Fill your Preferrences </h3>
+      <input class="fill-detail" type="text" id="scoreChoice" placeholder="min score" />
+      <input class="fill-detail" type="text" id="minPrice" placeholder="min price" />
+      <input class="fill-detail" type="text" id="maxPrice" placeholder="max price" />
+      <input class="fill-detail" type="text" id="roomNumber" placeholder="number of rooms" />
+
+          <a  class="btn" >filter</a> 
+           
+
+      </div>
+      
+    
+    </section>
+
+
+
+
+
+  <footer class="footer">
+    <p>© 2025 Lidor&Omer&Tali. All rights reserved.</p>
+  </footer>
+  <!-- <script src="services/global.js"></script> -->
+
+  </body>
 </html>
